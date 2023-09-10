@@ -34,7 +34,6 @@ a {
   height: 15rem;
 
   position: relative;
-  transition: 0.4s;
 }
 
 .displayPic::before {
@@ -51,10 +50,6 @@ a {
 
   background-color: #fff;
   z-index: -1;
-}
-
-.displayPic:hover {
-  transform: translateY(-20px);
 }
 
 img {
