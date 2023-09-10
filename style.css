@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+}
+
+a {
+  font-size: 16px;
+  color: blue;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayPic {
+  width: 15rem;
+  height: 15rem;
+
+  position: relative;
+  transition: 0.4s;
+}
+
+.displayPic::before {
+  content: "";
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  transform: scale(1.05);
+
+  background-color: #fff;
+  z-index: -1;
+}
+
+.displayPic:hover {
+  transform: translateY(-20px);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.flex_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex_gap {
+  gap: 0rem;
+}
+
+.UTCInMilliseconds {
+  font-size: 24px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 100;
+}

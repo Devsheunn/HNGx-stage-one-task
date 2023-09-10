@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="profile flex_group">
+        <div class="displayPic">
+          <img
+            src="./photo1694341627.jpeg"
+            data-testid="slackDisplayImage"
+            alt="Emmanuel Oluwaseun"
+          />
+        </div>
+        <h1 data-testid="slackUserName">Emmanuel Oluwaseun</h1>
+      </div>
+
+      <div class="time_day flex_group flex_gap">
+        <h2 data-testid="currentDayOfTheWeek" class="dayOfTheWeek"></h2>
+        <p data-testid="currentUTCTime" class="UTCInMilliseconds"></p>
+      </div>
+
+      <div class="career flex_group flex_gap">
+        <h3 data-testid="myTrack">FrontEnd</h3>
+        <p>
+          Github URL :
+          <a
+            href="https://github.com/Devsheunn/HNGx-stage-one-task"
+            data-testid="githubURL"
+            >Devsheunn</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
