@@ -11,7 +11,7 @@ const daysOfTheWeek = [
 //function expression to update time
 const updateTime = function () {
   const current = new Date().getTime();
-  document.querySelector(".UTCInMilliseconds").textContent = `${current} (UTC)`;
+  document.querySelector(".UTCInMilliseconds").textContent = current;
 
   const day = new Date().getDay();
   document.querySelector(".dayOfTheWeek").textContent = daysOfTheWeek[day];
